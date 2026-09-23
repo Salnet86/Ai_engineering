@@ -79,13 +79,25 @@ Produzione e Sicurezza (LLMOps): Ottimizzare i costi delle chiamate API, garanti
 In sintesi, l'AI Engineer è il professionista che trasforma l'intelligenza artificiale da semplice "curiosità tecnologica" a uno strumento aziendale concreto, sicuro e integrato.
 
 
+## 🤖 Integrazione Agente SQL con LangChain e Groq
+
+### 🧠 Teoria LangChain
+
+Un agente SQL basato su LangChain non si limita a tradurre una frase in codice SQL tramite un singolo prompt, ma adotta un flusso di lavoro autonomo e iterativo (ispirato al pattern **ReAct** - *Reasoning and Acting*), strutturato in quattro passaggi chiave:
 
 
 
-1. **Crea e attiva un ambiente virtuale:**
-   ```bash
-   python -m venv venv
-   # Windows (CMD):
-   venv\Scripts\activate
-   # Mac / Linux:
-   source venv/bin/activate
+
+
+1. **Analisi e Ragionamento (Reasoning)**: Quando riceve una domanda in linguaggio naturale (es. *"Quanti prestiti personali sono stati erogati?"*), l'intelligenza artificiale analizza l'obiettivo e pianifica quali informazioni recuperare.
+2. **Esplorazione Dinamica dello Schema**: Tramite specifici strumenti di sistema (`SQLDatabaseToolkit`), l'agente ispeziona in autonomia il database per comprendere la struttura delle tabelle, i campi disponibili e le relazioni (chiavi esterne).
+3. **Generazione e Autocorrezione (Self-Correction)**: L'agente scrive la query SQL e la testa sul database. Se incontra un errore di sintassi o un nome di tabella errato, legge il riscontro del sistema, corregge la query in autonomia e ripete l'operazione finché non ottiene il risultato corretto.
+4. **Sintesi in Linguaggio Naturale**: I dati grezzi estratti dal database vengono elaborati e tradotti in una risposta finale chiara e discorsiva per l'utente.
+
+
+
+
+
+
+
+   
