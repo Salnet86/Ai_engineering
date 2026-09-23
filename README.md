@@ -1,4 +1,4 @@
-# Modulo: Tecniche e Tecnologie per l'AI (30 Ore) corso python web app 
+# Modulo: Tecnologie per l'AI (30 Ore) corso python web app AI engrnering 
 **AI Engineering e Integrazione Pratica dei Modelli Linguistici (LLM)**
 
 Questo percorso raccoglie le istruzioni di configurazione e i codici sorgente sviluppati per il modulo formativo.
